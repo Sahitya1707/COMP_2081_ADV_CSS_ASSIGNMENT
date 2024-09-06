@@ -90,6 +90,24 @@ textarea {
   font-family: "SUSE", sans-serif;
 }
 
+main {
+  padding: 2rem 2rem;
+}
+div {
+  margin: 1rem 0;
+}
+div h2,
+h3 {
+  color: #f49500;
+  margin: 0 0 0.4rem 0;
+}
+div p {
+  padding: 0 0 0 0.5rem;
+}
+ul,
+ol {
+  padding: 0 0 0 2rem;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
