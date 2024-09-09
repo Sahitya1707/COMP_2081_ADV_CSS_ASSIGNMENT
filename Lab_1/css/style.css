@@ -109,7 +109,25 @@ ol {
   padding: 0 0 0 2rem;
 }
 .dynamic-color-btn {
-  position: absolute;
+  position: fixed;
+  border: 1px solid rgb(66, 50, 102);
+  color: rgb(66, 50, 102);
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: rgb(0, 191, 255);
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+.dynamic-color-btn:hover {
+  transform: ease-out;
+  transition-duration: 200ms;
+  background-color: rgb(66, 50, 102);
+  border-color: rgb(0, 191, 255);
+  color: rgb(0, 191, 255);
 }
 /* ==========================================================================
    Helper classes
