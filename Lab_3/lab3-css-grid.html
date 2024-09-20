@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Lab 3 | CSS Grid</title>
+	<meta name="description" content="A CSS Grid challenge to test your new layout skills">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		/* Put styles for CSS Grid here for the Lab */
+		.container {
+			display: grid;
+
+			grid-template-rows: repeat(5, 1fr);
+			grid-template-areas:
+				"branding advertising-1 advertising-1 advertising-1 search"
+				"branding global-nav global-nav global-nav global-nav"
+				"local-nav top-story top-story top-story advertising-2"
+				"local-nav global-news national-news local-news advertising-2"
+				"local-nav global-news national-news local-news market-info"
+				"footer footer footer footer footer"
+			;
+			/* giving the border outside */
+			border: 1px solid black;
+			/* adding background color to black  */
+			background-color: black;
+			/* grid-gap with 1px will make it show like the each item has it's own border */
+			grid-gap: 1px;
+		}
+
+		.item {
+			padding: 10px;
+		}
+
+		.item-a {
+			background-color: #E5B8B8;
+			grid-area: branding;
+		}
+
+		.item-b {
+			background-color: #f7d4b4;
+			grid-area: global-nav;
+		}
+
+		.item-c {
+			background-color: #CDC0DB;
+			grid-area: local-nav;
+		}
+
+		.item-d {
+			background-color: #fafdad;
+			grid-area: footer;
+		}
+
+		.item-e {
+			background-color: #c5bc97;
+			grid-area: top-story;
+		}
+
+		.item-f {
+			background-color: #d29ad6;
+			grid-area: global-news;
+		}
+
+		.item-g {
+			background-color: #F3BE8E;
+			grid-area: national-news;
+		}
+
+		.item-h {
+			background-color: #C6D9F1;
+			grid-area: local-news;
+		}
+
+		.item-i {
+			background-color: #C6D9F1;
+			grid-area: search;
+		}
+
+		.item-j {
+			background-color: #958A55;
+			grid-area: market-info;
+			/* grid column */
+			/* grid-template-areas */
+
+		}
+
+		.item-k {
+			background-color: lightgreen;
+			grid-area: advertising-1;
+			/* display: none; */
+
+		}
+
+		.item-l {
+			background-color: #C3D69A;
+			grid-area: advertising-2;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="item item-a">
+			<h2>Branding</h2>
+		</div>
+		<div class="item item-b">
+			<h2>Global Nav</h2>
+		</div>
+		<div class="item item-c">
+			<h2>Local Nav</h2>
+		</div>
+		<div class="item item-d">
+			<h2>Footer</h2>
+		</div>
+		<div class="item item-e">
+			<h2>Top Story</h2>
+		</div>
+		<div class="item item-f">
+			<h2>Global News</h2>
+		</div>
+		<div class="item item-g">
+			<h2>National News</h2>
+		</div>
+		<div class="item item-h">
+			<h2>Local News</h2>
+		</div>
+		<div class="item item-i">
+			<h2>Search</h2>
+		</div>
+		<div class="item item-j">
+			<h2>Market Info</h2>
+		</div>
+		<div class="item item-k">
+			<h2>Advertising 1</h2>
+		</div>
+		<div class="item item-l">
+			<h2>Advertising 2</h2>
+		</div>
+	</div><!-- .container -->
+</body>
+
+</html>
